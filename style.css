@@ -1,0 +1,154 @@
+
+body{
+    margin: 0px;
+    display: flex;
+    font-family: 'Mulish', sans-serif;
+}
+aside{
+    width: 30%;
+}
+main{
+    width: 70%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+}
+
+.sub-container{
+    background-color: gray;
+    margin: 4px;
+}
+.sub-container:nth-child(1){
+    width: 40%;
+}
+
+.sub-container:nth-child(2){
+    width: 60%;
+}
+.menu{
+    background-color: gray;
+    border-radius: 20px;
+    flex-direction: column;
+
+}
+.logo{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-size: large;
+
+}
+.adm{
+    position: relative;
+    top: 40px;
+    left: 20px;
+    color: aqua;
+}
+
+.dashboard{
+    position: relative;
+    top: 50px;
+    left: 20px;
+    font-size: larger;
+}
+
+.mensagens{
+    position: relative;
+    top: 70px;
+    left: 20px;
+    font-size: larger;
+}
+.social{
+    position: relative;
+    top: 90px;
+    left: 20px;
+    font-size: larger;
+}
+
+.documentos {
+    position: relative;
+    top: 110px;
+    left: 20px;
+    font-size: larger;
+}
+.settings{
+    position: relative;
+    top: 140px;
+    left: 20px;
+    color: aqua;
+}
+.roles{
+    position: relative;
+    top: 160px;
+    left: 20px;
+    font-size: larger;
+}
+
+.request{
+    position: relative;
+    top: 180px;
+    left: 20px;
+    font-size: larger;
+}
+
+.preferences{
+    position: relative;
+    top: 200px;
+    left: 20px;
+    font-size: larger;
+}
+
+.perfil{
+    height: 60px;
+    width: 60px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.info-card{
+    width: 25%;
+    height: 120px;
+    background-color: gray;
+    margin: 4px;
+}
+
+.breadcrumb{
+    height: 16px;
+    width: 100%;
+    background-color: gray;
+    margin: 4px 0;
+}
+
+.product-card{
+    width: 100%;
+    height: 200px;
+    background-color: gray;
+    margin: 4px 0;
+}
+
+.transaction-card{
+    width: 100%;
+    height: 200px;
+    background-color: gray;
+    margin: 4px 0;
+}
+.transactions{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 10%;
+    margin-bottom: 50px;
+
+}
+.quadrado-transactions{
+    width: 40%;
+    height: 60%;
+    background-color: gray;
+    margin: 4px 4px;
+}
