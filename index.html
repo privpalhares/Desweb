@@ -6,6 +6,8 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
     <body>
         <aside class="menu">
@@ -16,9 +18,7 @@
                 </i>
             </div>
 
-            <h4>
-                Administrador
-            </h4>
+            <h4>Administrador</h4>
 
             <ul>
                 <li>
@@ -42,9 +42,7 @@
                 </li>
             </ul>
 
-            <h4>
-                Configurações
-            </h4>
+            <h4>Configurações</h4>
             <ul>
                 <li>
                     <i class="fa-regular fa-handshake"></i> 
@@ -63,15 +61,26 @@
         </aside> 
         <main>
             <header>
-
-                <input type="text">
-
+               <div class="input">
+                 <div class="lupa"><i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                </div> 
+                <input type="text"></div>
 
                 <div class="perfil">
+                    <div class="icon">
+                        <img src="img/targaryen.jpg">
+                    </div>
+                    <p>Renya Targaryen</p>
                 </div>
-
             </header>
+
             <div class="breadcrumb">
+                <nav aria-label="Breadcrumb" class="breadcrumb">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><span aria-current="page">Dashboard</span></li>
+                </ul>
+            </nav>
             </div>
             <div class="container">
                 <div class="info-card"> 
@@ -104,6 +113,17 @@
                 <div class="sub-container">
                     <div class="product-card">
                         <h3>Produtos</h3>
+                        <div class="produto1"> 
+                            <div class="pro1">Product launched</div>
+                            <div class="num"><b>433</b></div>
+                            <div class="up"> <b>AVG 12</b> product add</div>
+                        </div>
+                        
+                        <div class="produto2">
+                            <div class="pro1">Product sold</div>
+                            <div class="num"><b>233</b></div>
+                            <div class="up"> <b>15 % </b> last month</div>
+                        </div>
                     </div>
             
                     <div class="transactions-card">
@@ -111,49 +131,60 @@
                 </div>
                 
                 <div class="sub-container">
+                    <h3>Analises</h3>
                     <div class="chart-card">
-                       
+                        <canvas id="myChart"></canvas>
                     </div>
-                        <h3>Analises</h3>
-                        <img class="grafico1" src="grafico analises.png" width="92%" height="90%">
-                    <div class="chart-card">
-                    
-                       
                 </div>
             </div>
+        <div class="container">
+            <div class="sub-container">
+                <div class="quadrado-transactions">
+                    <h3>Transações</h3>
+                    
+                    <div class="transactions">
+                       <div class="transaction-card">
+                            <div><i class="fa-solid fa-mobile fa-2xl" style="color: #ff780a;"></i></div>
+                            <div class="info-transactions"><p style="width:150px;"> Iphone 14 Pro Max </p><p> Jul 2022 - 11:50PM</p></div>
+                            <div class="produtos"> completed </div>
+                       </div>
+                       <div class="transaction-card">
+                            <div><i class="fa-solid fa-laptop fa-2xl" style="color: #ff780a;"></i></div>
+                            <div class="info-transactions"><p style="width:150px";><b> Mac Book Air </b></p><p> 10 Ago 2022  - 10:00PM</p></div>
+                            <div class="produtos">completed</div>
+                       </div>
+                       <div class="transaction-card">
+                            <div><i class="fa-solid fa-tablet fa-2xl" style="color: #ff780a;"></i></div>
+                            <div class="info-transactions"><p style="width:150px";>Tablet Samsung </p><p>13 Fev 2022 - 10:00PM</p></div>
+                            <div class="produtos">completed</div>
+                       </div>   
+                       <div class="transaction-card">
+                           <div> <i class="fa-solid fa-mobile fa-2xl" style="color: #ff780a;"></i></div>
+                           <div class="info-transactions"><p style="width:150px";><b> Smartphone Samsung</b></p><p>03 Mai 2022 - 9:45AM</p></div>
+                            <div class="produtos">completed</div>
+                       </div>
+                       <div class="transaction-card">
+                            <div><i><i class="fa-solid fa-radio fa-2xl" style="color: #ff780a;"></i></i></div>
+                            <div class="info-transactions"><p style="width:150px"; ><b> JBL Caixa de Som</b></p><p>11 Abr 2022 - 5:00PM</p></div>
+                            <div class="produtos">completed</div>
+                       </div>
+                       <div class="transaction-card">
+                            <div><i class="fa-solid fa-clock fa-2xl" style="color: #ff780a;"></i></div>
+                            <div class="info-transactions"><p style="width:150px";><b> Apple watch</b></p><p>22 Abr 2022 - 8:07PM</p></div>
+                            <div class="produtos">completed</div>
+                       </div>
+                    </div>
+                </div>
+            </div>            
+            <div class="sub-container">
+                <h3>Analises</h3>
+                <div class="chart-card">
+                    <canvas id="myChart2"></canvas>
+            </div>
         </div>
-        <div class="quadrado-transactions">
-            
-            <h3>Transações</h3>
-           
-            <div class="transactions">
-               
-                <br>
-                <b> Iphone 14 Pro Max </b>
-                <p class="info-transactions">21 Jul 2022 - 11:50PM</p>
-                <br>
-                <b>Mac Book Air</b>
-                <p class="info-transactions">10 Ago 2022  - 10:00PM</p>
-                <br>
-                <b>Alexa</b>
-                <p class="info-transactions">18 Fev 2022 - 7:32AM</p>
-                <br>
-                <b> Tablet Samsung</b>
-                <p class="info-transactions">13 Fev 2022 - 10:00PM</p>
-                <br>
-                <b>Smartphone Samsung</b>
-                <p class="info-transactions">03 Mai 2022 - 9:45AM</p>
-                <br>
-                <b>JBL Caixa de Som</b>
-               
-                <p class="info-transactions">11 Abr 2022 - 5:00PM</p>
-                <br>
-                <b>Apple watch</b>
-                <p class="info-transactions">22 Abr 2022 - 8:07PM</p>
-            </div>   
-        </main>
-        </div>              
+        </main>             
     </body>
+    <script src="script.js"></script>
 </html>
 <div>
    
